@@ -7,6 +7,13 @@
     text-align: center;
 }
 
+.container {
+display: flex;
+justify-content: left;
+background-color: black;
+flex-wrap: wrap;
+}
+
 nav {
     display: flex;
     justify-content: center;
@@ -26,13 +33,37 @@ nav a {
     padding: 10px 20px;
 }
 
+#logo {
+   width: 120px;
+   height: 120px;
+}
+
+
 .hero-banner {
-   background-color: rgb(178, 204, 227);
-   height: 30vh;
+   background-color: #c6f1f8; 
+   height: 60vh;
    display: flex;
    flex-direction: column;
-   justify-content: center;
-   align-items: center;
+   align-items: start;
+   background-image: url("../image/imgbaner.jpg");
+   background-repeat: no-repeat;
+   background-position: right;
+}
+
+.baner-body {
+    color: rgb(184, 45, 226);
+    font-size: 30px;
+}
+
+.baner-item {
+    font-size: 20px;
+    padding: 20px;
+    margin: 20px 10px;
+    border: transparent;
+    background-color: white;
+    text-decoration: none;
+    color: black;
+    border-radius: 25px;
 }
 
 img {
