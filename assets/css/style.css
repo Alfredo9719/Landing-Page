@@ -3,26 +3,34 @@
     font-size: 20px;
 }
 
+body {
+    margin: 0;
+}
+
 .etiq-sueltas {
     text-align: center;
 }
 
 .container {
 display: flex;
-justify-content: left;
+justify-content: right;
 background-color: black;
 flex-wrap: wrap;
+}
+
+#logo {
+   padding-right: 47em;
 }
 
 nav {
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 
 header {
     background-color: black;
-    padding: 15px;
 }
 
 nav a {
@@ -30,13 +38,12 @@ nav a {
     color: white;
     text-decoration: none;
     font-size: 20px;
-    padding: 10px 20px;
 }
 
-#logo {
-   width: 120px;
-   height: 120px;
+.container-head-item {
+    padding: 10px 15px;
 }
+
 
 
 .hero-banner {
@@ -50,9 +57,14 @@ nav a {
    background-position: right;
 }
 
+.baner-head {
+    padding-left: 25px;
+}
+
 .baner-body {
     color: rgb(184, 45, 226);
     font-size: 30px;
+    padding-left: 25px;
 }
 
 .baner-item {
@@ -66,17 +78,36 @@ nav a {
     border-radius: 25px;
 }
 
+
 img {
     width: 400px;
     height: 400px;
 }
+
+.img-head {
+    width: 120px;
+    height: 120px;
+}
+
 .product-section {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
+    padding: 25px;
 }
 
 .product-item {
     border: 1px solid #ccc;
-    box-shadow: 10 10 10 rgba(0,0,0,0.2);
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.adicionales-container {
+    padding: 50px 50px;
+    background-color: #ccc;
+    height: 50vh;
+    background-image: url("../image/extras.jpg");
+    background-repeat: no-repeat;
+    
 }
