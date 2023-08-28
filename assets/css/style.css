@@ -14,15 +14,9 @@ body {
 
 .container {
 display: flex;
-justify-content: right;
+justify-content: left;
 background-color: black;
 flex-wrap: wrap;
-}
-
-#logo {
-   padding-right: 50em;
-   display: flex;
-   flex-wrap: wrap-reverse;
 }
 
 nav {
@@ -51,17 +45,21 @@ nav a {
 
 .hero-banner {
    background-color: #c6f1f8; 
-   height: 60vh;
+   height: 50vh;
    display: flex;
    flex-direction: column;
    align-items: start;
    background-image: url("../image/imgbaner.jpg");
    background-repeat: no-repeat;
    background-position: right;
+   flex-wrap: wrap;
 }
 
 .baner-head {
     padding-left: 25px;
+    display: flex;
+    justify-content: left;
+    justify-items: left;
 }
 
 .baner-body {
@@ -107,9 +105,11 @@ img {
 }
 
 .adicionales-container {
-    padding: 50px 50px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px 10px;
     background-color: #3193b9;
-    height: 50vh;
+    height: 46vh;
     background-image: url("../image/extras.jpg");
     background-repeat: no-repeat;
     color: white;
