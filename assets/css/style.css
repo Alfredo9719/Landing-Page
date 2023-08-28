@@ -1,6 +1,6 @@
 :root {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
+    font-size: 15px;
     
 }
 
@@ -8,70 +8,77 @@ body {
     margin: 0;
 }
 
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    padding-right: 2rem;
+}
+
 .etiq-sueltas {
     text-align: center;
 }
 
-.container {
-display: flex;
-justify-content: left;
-background-color: black;
-flex-wrap: wrap;
-}
-
-nav {
+.nav {
     display: flex;
     justify-content: center;
     align-items: center;
     
 }
 
-header {
-    background-color: black;
+.nav-list {
+    display: flex;
+    list-style: none;
+    gap: 1rem;
 }
 
-nav a {
-    background-color: black;
-    color: white;
+.nav-list .nav-li .nav-a {
     text-decoration: none;
-    font-size: 20px;
+    color: white;
+}
+
+
+.menu {
+display: none;
 }
 
 .container-head-item {
     padding: 10px 15px;
 }
 
-
+.li-baner {
+    padding: 20px;
+    display: inline;
+}
 
 .hero-banner {
-   background-color: #c6f1f8; 
-   height: 50vh;
-   display: flex;
-   flex-direction: column;
-   align-items: start;
-   background-image: url("../image/imgbaner.jpg");
-   background-repeat: no-repeat;
-   background-position: right;
-   flex-wrap: wrap;
+    background-color: #c6f1f8;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px 15px;
+}
+
+.img-baner {
+    width: 680px;
+    height: 400px;
 }
 
 .baner-head {
-    padding-left: 25px;
-    display: flex;
-    justify-content: left;
-    justify-items: left;
+    font-size: 30px;
 }
 
 .baner-body {
     color: rgb(184, 45, 226);
-    font-size: 30px;
+    font-size: 20px;
     padding-left: 25px;
 }
 
 .baner-item {
-    font-size: 20px;
+    font-size: 10px;
     padding: 20px;
     margin: 20px 10px;
+    text-align: center;
     border: transparent;
     background-color: white;
     text-decoration: none;
@@ -80,9 +87,9 @@ nav a {
 }
 
 
-img {
-    width: 400px;
-    height: 400px;
+.img-main {
+    width: 250px;
+    height: 250px;
 }
 
 .img-head {
@@ -93,8 +100,8 @@ img {
 .product-section {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    padding: 25px;
+    gap: 10px;
+    padding: 15px;
 }
 
 .product-item {
@@ -105,24 +112,23 @@ img {
 }
 
 .adicionales-container {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 10px 10px;
     background-color: #3193b9;
-    height: 46vh;
-    background-image: url("../image/extras.jpg");
-    background-repeat: no-repeat;
-    color: white;
-    font-size: 26px;
+    display: grid;
+    grid-template-columns: repeat(2 , 1fr);
+    gap: 5px 10px;
 }
 
 .adicionales-container-item {
-    text-align: right;
-    margin-left: 800px;
+    padding-left: 10px;
+    color: white;
+}
+
+.adicioanles-p {
+    color: black;
 }
 
 .textEmail {
-    font-size: 20px;
+    font-size: 15px;
     border-radius: 10px;
     border: none;
 }
@@ -132,6 +138,7 @@ img {
     grid-template-columns: repeat(4, 1fr);
     padding: 20px 10px 20px 15px;
     color: #aca6a6;
+    font-size: 10px;
 }
 
 li {
@@ -150,4 +157,75 @@ li {
 
 .a-footer:hover {
    color: black;
+}
+
+@media screen and (max-width:550px) {
+
+    .menu {
+        display: block;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .baner-item {
+        font-size: 5px;
+        padding: 8px;
+        margin: 10px 5px;
+    }
+
+    .img-baner {
+        width: 270px;
+        height: 250px;
+    }
+
+    .baner-body {
+        font-size: 7px;
+        padding-left: 15px;
+    }
+
+    .baner-head {
+        font-size: 10px;
+    }
+
+    .li-baner {
+        padding: 7px;
+    }
+
+    .baner-p {
+        margin-bottom: 1rem;
+    }
+
+    .product-section {
+        gap: 5px;
+        padding: 8px;
+    }
+
+    .product-item {
+        padding: 5px;
+    }
+
+    .img-main {
+        width: 130px;
+        height: 130px;
+    }
+
+    .adicionales-container-item {
+        padding-left: 5px;
+        font-size: 10px;
+    }
+
+    .textEmail {
+        font-size: 7px;
+    }
+
+    .footer-item {
+        font-size: 7px;
+    }
+    
+    li {
+        text-align: start;
+    }
+    
 }

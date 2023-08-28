@@ -5,44 +5,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SmartLife</title>
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 </head>
 <body>
     <!--Encabezado-->
-    <div class="container">
         <header>
-            <nav>
-                <div id="logo">
-                    <a href="#">
-                        <img class="img-head" src="assets/image/logo.png" alt="">
-                    </a>
-                </div>
-                <div class="container-head-item">
-                    <a href="#">Inicio</a>
-                </div>
-                <div class="container-head-item">
-                    <a href="#">Catálogo</a>
-                </div>
-                <div class="container-head-item">
-                    <a href="#">Servicios</a>
-                </div>
-                <div class="container-head-item">
-                    <a href="#">Marcas</a>
-                </div>
-                <div class="container-head-item">
-                    <a href="#">Contacto</a>
-                </div>
+            <a href="#">
+                <img class="img-head" src="assets/image/logo.png" alt="">
+            </a>
+            <button class="menu"><i class="bi bi-list"></i></button>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li class="nav-li">
+                        <a class="nav-a" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-li">
+                        <a class="nav-a" href="#">Catálogo</a>
+                    </li>
+                    <li class="nav-li">
+                        <a class="nav-a" href="#">Servicios</a>
+                    </li>
+                    <li class="nav-li">
+                        <a class="nav-a" href="#">Marcas</a>
+                    </li>
+                    <li class="nav-li">
+                        <a class="nav-a" href="#">Contacto</a>
+                    </li>
+                </ul>  
             </nav>
         </header>
-    </div>
 <!--jumbotron-->
   <div class="hero-banner">
-    <div class="baner-head">
- <h1>Bienvenidos a SmartLife</h1>
-    </div>
           <div class="baner-body">
-            <p>¡No te pierdas de las ofertas exclusivas que tenemos para ti!</p>
-            <a href="#" class="baner-item">Ver ofertas...</a>
-            <a href="#" class="baner-item">Meses sin intereses</a>
+            <h1 class="baner-head">Bienvenidos a SmartLife</h1>
+            <p class="baner-p">¡No te pierdas de las ofertas exclusivas que tenemos para ti!</p>
+            <ul>
+                <li class="li-baner">
+                    <a href="#" class="baner-item">Ver ofertas...</a>
+                </li>
+                <li class="li-baner">
+                    <a href="#" class="baner-item">Meses sin intereses</a>
+                </li>
+            </ul>
+          </div>
+          <div>
+            <img class="img-baner" src="assets/image/imgbaner.jpg" alt="baner">
           </div>
         </div>
 <!--Blog o catalogo-->
@@ -55,7 +62,7 @@
             <div class="product-item">
                 <p>
                     <a href="#">
-                        <img src="assets/image/iphone-14.jpg" alt="">
+                        <img class="img-main" src="assets/image/iphone-14.jpg" alt="">
                     </a>
                 </p>
                 <p class="etiq-sueltas">iphone 14</p>
@@ -64,7 +71,7 @@
             <div class="product-item">
                 <p>
                     <a href="#">
-                        <img src="assets/image/Xiaomi-13Pro.jpeg" alt="">
+                        <img class="img-main" src="assets/image/Xiaomi-13Pro.jpeg" alt="">
                     </a>
                 </p>
                 <p class="etiq-sueltas">Xiaomi 13Pro</p>
@@ -72,7 +79,7 @@
             <div class="product-item">
                 <p>
                     <a href="#">
-                        <img src="assets/image/zflip-5.jpg" alt="">
+                        <img class="img-main" src="assets/image/zflip-5.jpg" alt="">
                     </a>
                 </p>
                 <p class="etiq-sueltas">Samsung z flip 5</p>
@@ -86,13 +93,15 @@
 <div class="adicionales-container">
    <div class="adicionales-container-item">
     <h3>Dejanos tu correo para recibir ofertas especiales</h3>
-   <div>
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi repudiandae nihil, distinctio reiciendis quas molestiae ex nostrum inventore, voluptatem quos earum harum quaerat veniam voluptate beatae possimus! Ratione, voluptatum libero!</p>
-   </div>
+
+    <p class="adicioanles-p">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi repudiandae nihil, distinctio reiciendis quas molestiae ex nostrum inventore, voluptatem quos earum harum quaerat veniam voluptate beatae possimus! Ratione, voluptatum libero!</p>
 
     <h2>Registrate aquí</h2>
     <input class="textEmail" type="email" placeholder="ingresa tu correo aquí" size="50">
     <button class="textEmail" type="submit">Enviar</button>
+   </div>
+   <div>
+    <img class="img-baner" src="assets/image/extras.jpg" alt="image">
    </div>
 </div>
 <!--footer-->
